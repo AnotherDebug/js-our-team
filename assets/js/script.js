@@ -35,3 +35,43 @@ Organizzare i singoli membri in card/schede
 
 5. Stampo i dati in pagina sottoforma di stringa;
 */
+
+//1. Creo il mio array di oggetti;
+const ourTeam = [
+  {
+    firstname: "Wayne",
+    lastname: "Barnett",
+    work: "Founder & CEO",
+    photo: "wayne-barnett-founder-ceo.jpg",
+  },
+  {
+    firstname: "Angela",
+    lastname: "Caroll",
+    work: "Chief Editor",
+    photo: "angela-caroll-chief-editor.jpg",
+  },
+  {
+    firstname: "Walter",
+    lastname: "Gordon",
+    work: "Office Manager",
+    photo: "walter-gordon-office-manager.jpg",
+  },
+  {
+    firstname: "Angela",
+    lastname: "Lopez",
+    work: "Social Media Manager",
+    photo: "angela-lopez-social-media-manager.jpg",
+  },
+  {
+    firstname: "Scott",
+    lastname: "Estrada",
+    work: "Developer",
+    photo: "scott-estrada-developer.jpg",
+  },
+  {
+    firstname: "Barbara",
+    lastname: "Ramos",
+    work: "Graphic Designer",
+    photo: "barbara-ramos-graphic-designer.jpg",
+  }
+];
