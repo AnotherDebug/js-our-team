@@ -30,15 +30,20 @@ Organizzare i singoli membri in card/schede
 2. All'interno di ogni oggetto inserisco le coppie chiave valore forniti;
 
 3. Estraggo i dati di ogni membro del team tramite l'utilizzo di un ciclo;
+   a. Utilizzo il ciclo for of per estrarre gli oggetti;
+   b. Utilizzo un ciclo for in per indicizzare i dati che voglioestrarre ed utilizzare;
 
 4. Stampo i dati in console;
 
 5. Stampo i dati in pagina sottoforma di stringa;
 */
 
+
+
 //1. Creo il mio array di oggetti;
 const ourTeam = [
   {
+    //2.
     firstname: "Wayne",
     lastname: "Barnett",
     work: "Founder & CEO",
@@ -75,3 +80,14 @@ const ourTeam = [
     photo: "barbara-ramos-graphic-designer.jpg",
   }
 ];
+
+
+//3. Estraggo i dati di ogni membro del team tramite l'utilizzo di un ciclo;
+//3. a.
+for (let team of ourTeam) {
+    console.log("OGGETTO " + team);
+    for(let data in team){
+        console.log("CHIAVE " + data);
+        console.log("VALORE " + team[data]);    
+    };
+};
