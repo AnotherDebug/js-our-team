@@ -21,3 +21,15 @@ Trasformare la stringa foto in una immagine effettiva
 
 **BONUS 2:**
 Organizzare i singoli membri in card/schede
+
+===============================================================================================
+
+1. Creo il mio array di oggetti;
+
+2. All'interno di ogni oggetto inserisco le coppie chiave valore forniti;
+
+3. Estraggo i dati di ogni membro del team tramite l'utilizzo di un ciclo;
+
+4. Stampo i dati in console;
+
+5. Stampo i dati in pagina sottoforma di stringa;
