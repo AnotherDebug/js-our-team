@@ -31,14 +31,15 @@ Organizzare i singoli membri in card/schede
 
 3. Estraggo i dati di ogni membro del team tramite l'utilizzo di un ciclo;
    a. Utilizzo il ciclo for of per estrarre gli oggetti;
-   b. Utilizzo un ciclo for in per indicizzare i dati che voglioestrarre ed utilizzare;
+   b. Utilizzo un ciclo for in per indicizzare i dati che voglio estrarre ed utilizzare;
 
 4. Stampo i dati in console;
 
 5. Stampo i dati in pagina sottoforma di stringa;
 */
 
-
+// riferimenti
+const rowRef = document.querySelector(".row");
 
 //1. Creo il mio array di oggetti;
 const ourTeam = [
@@ -78,16 +79,29 @@ const ourTeam = [
     lastname: "Ramos",
     work: "Graphic Designer",
     photo: "barbara-ramos-graphic-designer.jpg",
-  }
+  },
 ];
-
 
 //3. Estraggo i dati di ogni membro del team tramite l'utilizzo di un ciclo;
 //3. a.
 for (let team of ourTeam) {
-    console.log("OGGETTO " + team);
-    for(let data in team){
-        console.log("CHIAVE " + data);
-        console.log("VALORE " + team[data]);    
-    };
-};
+  //4.
+  console.log("OGGETTO " + team);
+  //3. b.
+  for (let data in team) {
+    //4.
+    console.log("CHIAVE " + data);
+    console.log("VALORE " + team[data]);
+    console.log(`NOME: ${team.firstname} ${team.lastname}`);
+  }
+  //5. Stampo i dati in pagina sottoforma di stringa;
+  rowRef.innerHTML += `
+        <div class="col">
+                        <img src="assets/img/${team.photo}">
+                        <div class="info">
+                            <p class="name">${team.firstname} ${team.lastname}</p>
+                            <p class="workingPosition">${team.work}</p>
+                        </div>
+                    </div>
+        `;
+}
