@@ -10,18 +10,16 @@
 /************************************************
     UTILITIES
  ************************************************/
+body {
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.721);
+}
 
  .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
-.d-flex {
-    display: flex;
-}
-
 
 /* !"DEBUG" DA ELIMINARE TERMINATO IL CODICE*/
 .debug {
@@ -32,3 +30,37 @@
 /************************************************
     SITE SECTIONS
  ************************************************/
+
+
+ header {
+    margin: 0 100px;
+ }
+
+ main .cards {
+    margin-top: 50px;
+ }
+
+ main .cards .row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ main .cards .row .col {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+ }
+
+ main .cards .row .col>img  {
+    width: 100%;
+ }
+
+ main .cards .row .col .img img {
+    width: 100%;
+ }
+
+ main .cards .row .col .info {
+    padding: 10px 0;
+    background-color: white;
+ }
