@@ -52,15 +52,15 @@ body {
     width: calc(100% / 3 - 20px);
  }
 
- main .cards .row .col>img  {
-    width: 100%;
- }
-
- main .cards .row .col .img img {
+ main .cards .row .col img  {
     width: 100%;
  }
 
  main .cards .row .col .info {
     padding: 10px 0;
     background-color: white;
+ }
+
+ main .cards .row .col .info p:last-child {
+    font-size: 13px;
  }
