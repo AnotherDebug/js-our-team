@@ -29,6 +29,8 @@ Organizzare i singoli membri in card/schede
 2. All'interno di ogni oggetto inserisco le coppie chiave valore forniti;
 
 3. Estraggo i dati di ogni membro del team tramite l'utilizzo di un ciclo;
+   a. Utilizzo il ciclo for of per estrarre gli oggetti;
+   b. Utilizzo un ciclo for in per indicizzare i dati che voglio estrarre ed utilizzare;
 
 4. Stampo i dati in console;
 
